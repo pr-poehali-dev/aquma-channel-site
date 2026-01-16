@@ -112,10 +112,14 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(155,135,245,0.1),transparent_50%)]"></div>
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+    <div className="min-h-screen relative overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: 'url(https://cdn.poehali.dev/files/digicamfx-original-2025-12-18T22-29-36.jpg)',
+        }}
+      ></div>
+      <div className="absolute inset-0 bg-black/40"></div>
       
       <div className="relative z-10 container mx-auto px-4 py-12 md:py-20 space-y-20">
         <div className="text-center mb-12 md:mb-16 animate-fade-in">
